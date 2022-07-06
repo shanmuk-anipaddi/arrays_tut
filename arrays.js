@@ -19,10 +19,33 @@ let numberCount = numbers.length;
 // console.log(smallest);
 
 //Finding the Biggest numbers
-var biggest = numbers[0];
+// var biggest = numbers[0];
+// for (i = 0; i <= numberCount; i++) {
+//   if (numbers[i] > biggest) {
+//     biggest = numbers[i];
+//   }
+// }
+// console.log(biggest);
+
+///////////////////////////////////
+// Finding second biggest
+///////////////////////////////////
+var biggest = secondBiggest =  numbers[0];
+//Finding largest array
 for (i = 0; i <= numberCount; i++) {
   if (numbers[i] > biggest) {
     biggest = numbers[i];
   }
 }
+
+//Finding second largest
+
+for(j=0;j<=numberCount;j++){
+
+    if(numbers[j] > secondBiggest && numbers[j] < biggest){
+        secondBiggest = numbers[j];
+    }
+
+}
 console.log(biggest);
+console.log(secondBiggest);
