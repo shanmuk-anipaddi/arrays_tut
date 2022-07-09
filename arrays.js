@@ -30,22 +30,44 @@ let numberCount = numbers.length;
 ///////////////////////////////////
 // Finding second biggest
 ///////////////////////////////////
-var biggest = secondBiggest =  numbers[0];
-//Finding largest array
-for (i = 0; i <= numberCount; i++) {
-  if (numbers[i] > biggest) {
-    biggest = numbers[i];
-  }
-}
+// var biggest = secondBiggest =  numbers[0];
+// //Finding largest array
+// for (i = 0; i <= numberCount; i++) {
+//   if (numbers[i] > biggest) {
+//     biggest = numbers[i];
+//   }
+// }
 
-//Finding second largest
+// //Finding second largest
 
-for(j=0;j<=numberCount;j++){
+// for(j=0;j<=numberCount;j++){
 
-    if(numbers[j] > secondBiggest && numbers[j] < biggest){
-        secondBiggest = numbers[j];
-    }
+//     if(numbers[j] > secondBiggest && numbers[j] < biggest){
+//         secondBiggest = numbers[j];
+//     }
 
-}
-console.log(biggest);
-console.log(secondBiggest);
+// }
+// console.log(biggest);
+// console.log(secondBiggest);
+
+/////////////////
+//Sor the array
+/////////////////
+
+
+
+
+////////////
+
+var array = [1,2,3,4,5]
+console.log(array.length) // 5
+array.length = 3
+console.log(array.length) // 3
+console.log(array) //[1,2,3]
+delete array[0] 
+console.log(array); //[undefined,2,3]
+console.log(array[0]); //undefined
+console.log(array.length) //3
+
+
+
