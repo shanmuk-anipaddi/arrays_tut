@@ -134,8 +134,18 @@ var array = [1, 2, 3, 4, 5, 10, 20];
 // })
 
 //find the odd number
-const even_every = array.every((element)=>{
-    return element%2 == 1;
-})
+// const even_every = array.every((element)=>{
+//     return element%2 == 1;
+// })
 
-console.log(even_every);
+// console.log(even_every);
+//Of we will get values
+for(let num of array.values()){
+    console.log(num);
+}
+
+
+//In we wil get keys
+for(let num in array){
+    console.log(num);
+}
