@@ -54,20 +54,60 @@ let numberCount = numbers.length;
 //Sor the array
 /////////////////
 
-
-
-
 ////////////
 
-var array = [1,2,3,4,5]
-console.log(array.length) // 5
-array.length = 3
-console.log(array.length) // 3
-console.log(array) //[1,2,3]
-delete array[0] 
-console.log(array); //[undefined,2,3]
-console.log(array[0]); //undefined
-console.log(array.length) //3
+// var array = [1,2,3,4,5]
+// console.log(array.length) // 5
+// array.length = 3
+// console.log(array.length) // 3
+// console.log(array) //[1,2,3]
+// delete array[0]
+// console.log(array); //[undefined,2,3]
+// console.log(array[0]); //undefined
+// console.log(array.length) //3
+
+//find method in array
+
+var array = [1, 2, 3, 4, 5, 10, 20];
+
+// const found = array.find((element) => {
+//    // console.log(element)
+//     if(element == 10){
+//         //return index+"  :  "+element;
+//         return element;
+//     }
+
+// });
+// console.log(found);
+
+//Find Index ///////////////////////////////
+
+// let foundIndex = array.findIndex((element, index) => {
+//   if (element == 10) {
+//     return index;
+//   }
+// });
+
+//console.log(foundIndex);
+//Find Index  end///////////////////////////////
 
 
+//Map  Start///////////////////////////////
+    // let arrmap = array.map((ele) => {
 
+    //     return ele*2;
+
+    // });
+
+    // console.log(arrmap)
+//Map  End///////////////////////////////
+
+//Filter  Start///////////////////////////////
+let arrayFilter = array.filter((ele) => {
+    if(ele > 5){
+        return ele;
+    }
+})
+
+console.log(arrayFilter)
+//Filter  End///////////////////////////////

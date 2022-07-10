@@ -9,10 +9,9 @@
 //     console.log(x+' = '+person[x]);
 // }
 
-
 //For in over arrays
 
-const numbers = [4,10,2,89,45]
+const numbers = [4, 10, 2, 89, 45];
 
 // let sum ;
 // for(let x in numbers ){
@@ -31,8 +30,14 @@ const numbers = [4,10,2,89,45]
 // }
 
 //      For of            //
-for(let num of numbers){
-    console.log(num);
+// for(let num of numbers){
+//     console.log(num);
+// }
+
+const firstname = fun();
+//let name = "vivek";
+var dname = "vivek";
+function fun() {
+  return `my is ${dname} malviya`;
 }
-
-
+console.log(firstname);
