@@ -103,11 +103,39 @@ var array = [1, 2, 3, 4, 5, 10, 20];
 //Map  End///////////////////////////////
 
 //Filter  Start///////////////////////////////
-let arrayFilter = array.filter((ele) => {
-    if(ele > 5){
-        return ele;
-    }
+    // let arrayFilter = array.filter((ele) => {
+    //     if(ele > 5){
+    //         return ele;
+    //     }
+    // })
+
+    // console.log(arrayFilter)
+//Filter  End///////////////////////////////
+
+//entries  Start///////////////////////////////
+    // console.log(array.entries());
+    // for (let num of array.entries()){
+    //     console.log(num);
+    // }
+
+//Outputs array with 
+/*index[ 0, 1 ]
+[ 1, 2 ]
+[ 2, 3 ]
+[ 3, 4 ]
+[ 4, 5 ]
+[ 5, 10 ]*/
+//Entries  end///////////////////////////////
+
+//Every  start///////////////////////////////
+//find the even number
+// const even_every = array.every((element)=>{
+//     return element/2 == 0;
+// })
+
+//find the odd number
+const even_every = array.every((element)=>{
+    return element%2 == 1;
 })
 
-console.log(arrayFilter)
-//Filter  End///////////////////////////////
+console.log(even_every);
