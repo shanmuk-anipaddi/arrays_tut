@@ -187,33 +187,49 @@ var array = [1, 2, 3, 4, 5, 10, 20];
 // console.log(addMul(5,3));
 
 ///Sorting array with new array start
-        // const arr = [13, 10, 5, 15, 1, 20];
-        // console.log("Before array : ", arr);
-        // for (let i = 0; i < arr.length; i++) {
-        // for (j = i + 1; j < arr.length; j++) {
-        //     //if(arr[i] < arr[j]){ // descending
-        //     if (arr[i] > arr[j]) {
-        //     // descending
-        //     let tempVar = arr[i];
-        //     arr[i] = arr[j];
-        //     arr[j] = tempVar;
-        //     }
-        // }
-        // }
-        // console.log("Sorted array : ", arr);
+// const arr = [13, 10, 5, 15, 1, 20];
+// console.log("Before array : ", arr);
+// for (let i = 0; i < arr.length; i++) {
+// for (j = i + 1; j < arr.length; j++) {
+//     //if(arr[i] < arr[j]){ // descending
+//     if (arr[i] > arr[j]) {
+//     // descending
+//     let tempVar = arr[i];
+//     arr[i] = arr[j];
+//     arr[j] = tempVar;
+//     }
+// }
+// }
+// console.log("Sorted array : ", arr);
 ///Sorting array with new array end
 
-let num = 4;
-function outer() {
-  let num = 2;
-  function inner() {
-    num++; 
-    let num = 3;
-    console.log("num", num);
-  }
-  inner();
-}
-outer();
-function sayHi() {
-  return (() => 0)();
-}
+// let num = 4;
+// function outer() {
+//   let num = 2;
+//   function inner() {
+//     num++;
+//     let num = 3;
+//     console.log("num", num);
+//   }
+//   inner();
+// }
+// outer();
+// function sayHi() {
+//   return (() => 0)();
+// }
+
+//SLice and splice start
+// const fruits = ["Banana", "Orange", "Lemon", "Apple", "Mango"];
+// const citrus = fruits.slice(1, 3);
+// //const citrus = fruits.splice(1, 3);
+// console.log(citrus);
+// console.log(fruits);
+//SLice and splice end
+
+const arr1 = [1,2,3];
+const arr2 = [4,5,6];
+
+const arr3 = arr1.concat(arr2);
+console.log(arr1);
+console.log(arr2);
+console.log(arr3);
