@@ -91,34 +91,33 @@ var array = [1, 2, 3, 4, 5, 10, 20];
 //console.log(foundIndex);
 //Find Index  end///////////////////////////////
 
-
 //Map  Start///////////////////////////////
-    // let arrmap = array.map((ele) => {
+// let arrmap = array.map((ele) => {
 
-    //     return ele*2;
+//     return ele*2;
 
-    // });
+// });
 
-    // console.log(arrmap)
+// console.log(arrmap)
 //Map  End///////////////////////////////
 
 //Filter  Start///////////////////////////////
-    // let arrayFilter = array.filter((ele) => {
-    //     if(ele > 5){
-    //         return ele;
-    //     }
-    // })
+// let arrayFilter = array.filter((ele) => {
+//     if(ele > 5){
+//         return ele;
+//     }
+// })
 
-    // console.log(arrayFilter)
+// console.log(arrayFilter)
 //Filter  End///////////////////////////////
 
 //entries  Start///////////////////////////////
-    // console.log(array.entries());
-    // for (let num of array.entries()){
-    //     console.log(num);
-    // }
+// console.log(array.entries());
+// for (let num of array.entries()){
+//     console.log(num);
+// }
 
-//Outputs array with 
+//Outputs array with
 /*index[ 0, 1 ]
 [ 1, 2 ]
 [ 2, 3 ]
@@ -140,12 +139,81 @@ var array = [1, 2, 3, 4, 5, 10, 20];
 
 // console.log(even_every);
 //Of we will get values
-for(let num of array.values()){
-    console.log(num);
+// for(let num of array.values()){
+//     console.log(num);
+// }
+
+// //In we wil get keys
+// for(let num in array){
+//     console.log(num);
+// }
+
+//Reduce Start////////////////////////////////
+// const reduceSum = array.reduce((total,element)=>{
+//     return total+=element
+// })
+// console.log(reduceSum)
+//Reduce End////////////////////////////////
+
+// const call = (a) => {
+//     return (b) => {
+//     return (c) => {
+//     return a * b * c;
+//     };
+//     };
+//     };
+//     console.log("output with arrow function", call(2)(4)(6));
+
+// for (let i = 0; i < 5; i++) {
+//   setTimeout(function () {
+//     console.log(i);
+//   }, i * 1000);
+// }
+
+// for (var i = 0; i < 5; i++) {
+//   setTimeout(function () {
+//     console.log(i);
+//   }, i * 1000);
+// }
+
+// const addMul = (a,b)=>{
+//     let answer = a;
+//     for(let i=0;i<b-1;i++){
+//         answer += a;
+//     }
+//     return answer;
+// }
+
+// console.log(addMul(5,3));
+
+///Sorting array with new array start
+        // const arr = [13, 10, 5, 15, 1, 20];
+        // console.log("Before array : ", arr);
+        // for (let i = 0; i < arr.length; i++) {
+        // for (j = i + 1; j < arr.length; j++) {
+        //     //if(arr[i] < arr[j]){ // descending
+        //     if (arr[i] > arr[j]) {
+        //     // descending
+        //     let tempVar = arr[i];
+        //     arr[i] = arr[j];
+        //     arr[j] = tempVar;
+        //     }
+        // }
+        // }
+        // console.log("Sorted array : ", arr);
+///Sorting array with new array end
+
+let num = 4;
+function outer() {
+  let num = 2;
+  function inner() {
+    num++; 
+    let num = 3;
+    console.log("num", num);
+  }
+  inner();
 }
-
-
-//In we wil get keys
-for(let num in array){
-    console.log(num);
+outer();
+function sayHi() {
+  return (() => 0)();
 }
